@@ -1,75 +1,19 @@
 
 
 <template>
-  <div>
-    <v-carousel>
-        <v-carousel-item
-        v-for="(item,i) in items"
-        :key="i"
-        :src="item.src"
-        ></v-carousel-item>
-    </v-carousel>
-
-
-
-    <template>
-  <v-data-table
-    :headers="headers"
-    :items="desserts"
-    class="elevation-1"
-  >
-    <template slot="items" slot-scope="props">
-      <td>{{ props.item.name }}</td>
-      <td class="text-xs-right">{{ props.item.calories }}</td>
-      <td class="text-xs-right">{{ props.item.fat }}</td>
-      <td class="text-xs-right">{{ props.item.carbs }}</td>
-      <td class="text-xs-right">{{ props.item.protein }}</td>
-      <td class="text-xs-right">{{ props.item.iron }}</td>
-    </template>
-  </v-data-table>
+  <p>
+      1234
+  </p>
 </template>
-
-
-
-
-    <template>
-    <v-footer
-        dark
-        height="auto"
-    >
-        <v-card
-        flat
-        tile
-        class="indigo lighten-1 white--text text-xs-center"
-        >
-        <v-card-text>
-            <v-btn
-            v-for="icon in icons"
-            :key="icon"
-            class="mx-3 white--text"
-            icon
-            >
-            <v-icon size="24px">{{ icon }}</v-icon>
-            </v-btn>
-        </v-card-text>
-
-        <v-card-text class="white--text pt-0">
-            Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula lacinia malesuada. Nulla placerat augue vel ipsum ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel diam elementum tempor vel ut orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-        </v-card-text>
-
-        <v-divider></v-divider>
-
-        <v-card-text class="white--text">
-            &copy;2018 — <strong>Vuetify</strong>
-        </v-card-text>
-        </v-card>
-    </v-footer>
-    </template>
-  </div>
-</template>
-
+<style scoped>
+    p{
+        padding: 10px;
+        background-color: silver;
+    }
+</style>
 <script>
   export default {
+    name: 'helloDemo',
     data () {
       return {
         items: [
